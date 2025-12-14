@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Careers - CareerPath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">CareerPath</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="quiz.html">Take Quiz</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Explore Career Fields</h1>
+            <p>Click on any career to learn more about opportunities, requirements, and salary ranges</p>
+        </div>
+    </section>
+
+    <section class="careers-section">
+        <div class="container">
+            <div class="careers-grid">
+                <div class="career-card" onclick="openModal('engineering')">
+                    <div class="career-icon">⚙️</div>
+                    <h3>Engineering</h3>
+                    <p>Design, build, and innovate</p>
+                </div>
+                <div class="career-card" onclick="openModal('medical')">
+                    <div class="career-icon">🏥</div>
+                    <h3>Medical & Healthcare</h3>
+                    <p>Care for people's health</p>
+                </div>
+                <div class="career-card" onclick="openModal('business')">
+                    <div class="career-icon">💼</div>
+                    <h3>Business & Management</h3>
+                    <p>Lead and manage organizations</p>
+                </div>
+                <div class="career-card" onclick="openModal('it')">
+                    <div class="career-icon">💻</div>
+                    <h3>IT & Computer Science</h3>
+                    <p>Create digital solutions</p>
+                </div>
+                <div class="career-card" onclick="openModal('arts')">
+                    <div class="career-icon">🎨</div>
+                    <h3>Arts & Design</h3>
+                    <p>Express creativity visually</p>
+                </div>
+                <div class="career-card" onclick="openModal('law')">
+                    <div class="career-icon">⚖️</div>
+                    <h3>Law & Justice</h3>
+                    <p>Uphold justice and rights</p>
+                </div>
+                <div class="career-card" onclick="openModal('psychology')">
+                    <div class="career-icon">🧠</div>
+                    <h3>Psychology</h3>
+                    <p>Understand human behavior</p>
+                </div>
+                <div class="career-card" onclick="openModal('media')">
+                    <div class="career-icon">📺</div>
+                    <h3>Media & Communications</h3>
+                    <p>Share stories and information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CareerPath. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

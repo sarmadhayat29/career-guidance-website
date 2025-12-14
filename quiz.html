@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Quiz - CareerPath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">CareerPath</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="quiz.html" class="active">Take Quiz</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="quiz-section">
+        <div class="container">
+            <div class="quiz-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress"></div>
+                </div>
+                <p class="progress-text">Question <span id="current-q">1</span> of <span id="total-q">15</span></p>
+                
+                <div id="quiz-content"></div>
+                
+                <div class="quiz-navigation">
+                    <button class="btn btn-secondary" id="prev-btn" onclick="previousQuestion()" style="display: none;">Previous</button>
+                    <button class="btn btn-primary" id="next-btn" onclick="nextQuestion()">Next</button>
+                    <button class="btn btn-primary" id="submit-btn" onclick="submitQuiz()" style="display: none;">Submit Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CareerPath. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
